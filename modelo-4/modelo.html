@@ -7,22 +7,24 @@
     <title>Modelo de exercicio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="msg">
-            Aqui vai aparecer a mensagem...
+        <div class="numero">
+            <p>Número: <input type="number" name="num" id="txtn"> <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
         </div>
-        <div id="foto">
-            <img id="imagem" src="fotomanha.png" alt="Foto do Dia">
+        <div id="res" class="resultado">
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima</option>
+            </select>
         </div>
-
     </section>
     <footer>
          <p>&copy; Diego Biscaia</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
